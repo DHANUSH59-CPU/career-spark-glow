@@ -4,13 +4,13 @@ import Lenis from '@studio-freight/lenis';
 
 export const useLenis = () => {
   useEffect(() => {
-    // Initialize Lenis with ultra-smooth settings
+    // Initialize Lenis with maximum smoothness settings
     const lenis = new Lenis({
-      duration: 2.5,
-      easing: (t) => 1 - Math.pow(1 - t, 4),
-      lerp: 0.05,
-      wheelMultiplier: 0.8,
-      touchMultiplier: 1.5,
+      duration: 3.2,
+      easing: (t) => 1 - Math.pow(1 - t, 5),
+      lerp: 0.03,
+      wheelMultiplier: 0.6,
+      touchMultiplier: 1.8,
     });
 
     // Animation frame loop
